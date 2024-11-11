@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #111;
+    background-color: #DEE8D5;
 }
 
 
@@ -25,7 +25,7 @@ z-index: 100;
 
 #navbar a{
     font-size: 18px;
-    color: white;
+    color: #8F8F8F;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
@@ -33,5 +33,5 @@ z-index: 100;
     cursor: pointer;
 }
 #navbar a:hover, #navbar a.active {
-    color:pink;
+    color:#eb37c1;
 }
