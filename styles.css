@@ -60,6 +60,7 @@ z-index: 100;
 .home-content p {
     font-size: 16px;
     margin: 20px 0 40px;
+    opacity: 0.8;
 }
 .home-content .btn-box {
     width: 345px;
