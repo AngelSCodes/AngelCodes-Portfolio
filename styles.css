@@ -330,6 +330,7 @@ margin: 20px 0 40px;
 
 /*Projects Section */
 .projects-section {
+    height: 100%vh;
     padding: 40px;
     background-color: #29001b;
 }
