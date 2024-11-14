@@ -396,3 +396,44 @@ margin: 20px 0 40px;
 width: 0;
 }
 }
+
+
+/*small phones*/
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+    main {
+      width: 100%;
+      padding: 10px;
+    }
+    header {
+      text-align: center;
+    }
+  }
+  
+  /*tablets*/
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+    body {
+      font-size: 16px;
+    }
+    main{
+      width: 90%;
+      padding: 20px;
+    }
+    header {
+      text-align: left;
+    }
+  }
+
+  /*high-resolution*/
+  @media only screen and (min-resolution: 192dpi) {
+    body {
+      font-size: 18px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
