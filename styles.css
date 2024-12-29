@@ -35,6 +35,34 @@ justify-content: space-between;
 z-index: 100;
 }
 
+.menu-icon {
+    display:none;
+    cursor: pointer;
+}
+
+.menu-icon i { 
+    font-size: 24px; 
+    color: #dfb8f1; }
+
+    #menu-toggle { 
+        display: none; 
+    } 
+    /* Hide the navbar by default */
+     #navbar { 
+        display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+    } 
+    #navbar a { 
+        font-size: 18px; 
+        color: #dfb8f1; 
+        text-decoration: none;
+        font-weight: 500; 
+        margin-left: 35px; 
+        transition: .3s; 
+        cursor: pointer; 
+    }
+
 .logo {
 position: relative;
 font-size: 25px;
@@ -44,7 +72,7 @@ font-weight: 600;
 }
 
 .logo::before {
-content: ' ';
+content: '  ';
 position: absolute;
 top: 0;
 right: 0;
@@ -55,15 +83,6 @@ animation: showRight 1s ease forwards;
 animation-delay: 0.4s;
 }
 
-#navbar a{
-    font-size: 18px;
-    color: #dfb8f1;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
-    cursor: pointer;
-}
 #navbar a:hover, #navbar a.active {
     color:#eb3571;
 }
@@ -355,7 +374,13 @@ margin: 20px 0 40px;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+
 }
+
+.project:hover {
+     transform: translateY(-10px); 
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
 
 .project h3 {
     font-size: 1.75em;
@@ -450,4 +475,28 @@ width: 0;
       height: auto;
     }
   }
+
+  /* Show the menu icon and hide the navbar on small screens */
+   @media (max-width: 768px) {
+     .menu-icon {
+         display: block; 
+        } 
+        #navbar { 
+            display: none; 
+            flex-direction: column;
+            align-items: flex-start; 
+            background-color: #29001b; 
+            width: 100%; 
+            position: absolute; 
+            top: 60px; 
+            left: 0; 
+            padding: 20px; 
+        } 
+        #navbar a { 
+            margin: 10px 0; 
+        } 
+        #menu-toggle:checked + .menu-icon + #navbar { 
+            display: flex; 
+        } 
+    }
   
